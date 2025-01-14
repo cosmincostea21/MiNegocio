@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffe1e1;
+}
+
+header{
+    background-image: url();
+    width: 100%;
+    height: 300px;
+    background-image: url(images/cabecera.jpg);
+    background-position-y: 45%;
+    background-size: cover;
+    display: flex;/* Para centrar horizontal y verticalmente siempre a las cajas padre */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    text-shadow: 3px 3px 3px black;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header p{
+    text-shadow: 3px 3px 3px black;
+    color: rgb(247, 123, 119);
+    font-size: 30px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+nav{
+    background-color: rgb(247, 123, 119);
+
+    /*Determina el tipo de comportamiento que va a adquirir una caja*/
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+
+    /*flex-wrap: wrap Permite la separacion de elementos ocupando todo el espacio - No hace falta porque el tamaño de las cajas es de 20%*/
+    width: 100%;
+}
+
+nav p{
+    padding: 15px;
+    width: 25%; /*El tamaño perfecto para que el espacio se distribuya en proporción*/
+}
+
+nav p a{
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+
+}
+
+nav p:hover{
+    color: #ffffff;
+}
+
+section h1{
+    padding-left: 50px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: rgb(247, 123, 119);
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+#informacion{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-bottom: 90px;
+}
+
+#info_derecha{
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 50%;
+
+}
+
+#info_izq{
+    padding: 5px;
+}
+
+#info_derecha h2{
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    color: rgb(248, 158, 155);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#info_izq img{
+    border-radius: 3%;
+}
+
+#opiniones{
+    padding-top: 40px;
+}
+
+
+#opinionesClientes{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clientes{
+    text-align: center;
+    margin: auto;
+    width: 33%;
+}
+
+.clientes img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+}
+
+footer{
+    margin-top: 30px;
+    padding: 40px;
+    background-color: rgb(247, 123, 119);
+    display: flex;
+    justify-content: center;
+}
+
+.footerCajas{
+    color: white;
+    text-align: center;
+    width: 33%;
+}
+
+.footerCajas a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1030px) {
+    *{
+        margin: auto;
+    }
+    header{
+        background-image: url(images/cabeceraQuery.png);
+    }
+    nav{
+        position: auto;
+        top: auto;
+        display: block;
+        text-align: center;
+    }
+    nav a{
+        display: block;
+    }
+
+    h1{
+        padding-left: 0px;
+        text-align: center;
+    }
+    #info_izq{
+        padding-bottom: 20px;
+    }
+    #informacion {
+        display: block;
+        text-align: center;
+    }
+    #opinionesClientes{
+        display: block;
+    }
+    footer{
+        display: block;
+    }
+}
